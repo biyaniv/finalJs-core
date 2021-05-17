@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons button {
+    width: 150px;
+    height: 40px;
+    border: solid black 2px;
+    margin-left: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    background-color: rgb(240, 92, 92);
+    border-radius: 10px;
+}
+
+.seconds {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 1246px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(247, 247, 243);
+}
+
+.piecesPuzzle,
+.puzzle {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 20px;
+    width: 650px;
+    height: 600px;
+    border: solid black 1px;
+    border-radius: 10px;
+
+}
+
+.puzzle {
+    padding: 100px;
+    background-color: rgb(247, 247, 243);
+}
+
+.piece {
+    width: 100px;
+    height: 100px;
+
+    background-image: url(pepe.jpg);
+    background-repeat: no-repeat;
+}
+
+.emptyPiece {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+}
+
+
+h1 {
+    display: none;
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 27px;
+}
+
+.modal__wrapper {
+    display: none;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    bottom: 0;
+    width: 800px;
+    height: 250px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    z-index: 10000;
+
+}
+
+.modal__check {
+    margin-right: 20px;
+    background-color: green;
+    font-size: 18px;
+}
+
+.modal__close {
+    background-color: red;
+    font-size: 18px;
+}
+
+.modal__check,
+.modal__close {
+    margin-top: 20px;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+
+}
